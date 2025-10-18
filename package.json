@@ -1,0 +1,22 @@
+{
+  "name": "demo-2vfu_new",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Croissantium/demo-2vfu_new.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Croissantium/demo-2vfu_new/issues"
+  },
+  "homepage": "https://github.com/Croissantium/demo-2vfu_new#readme",
+  "devDependencies": {
+    "sass": "^1.93.2"
+  }
+}
