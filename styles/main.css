@@ -293,7 +293,7 @@ body {
   font-size: clamp(0.875rem, 0.8173076923rem + 0.2564102564vw, 1.125rem);
   font-family: var(--font-famaly-base);
   letter-spacing: -0.03em;
-  color: var(--color-gray-50);
+  color: var(--color-dark);
   background-color: var(--color-light);
 }
 
