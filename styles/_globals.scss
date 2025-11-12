@@ -61,10 +61,6 @@ svg * {
 a {
     color: inherit;
 
-    @include hover {
-        color: var(--color-accent);
-    }
-
     &[class] {
         text-decoration: none;
     }

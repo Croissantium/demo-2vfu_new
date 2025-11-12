@@ -6,4 +6,25 @@
         text-align: center;
         border-bottom: var(--border);
     }
+
+    &__body {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        padding: rem(18) rem(0);
+
+        &-inner {
+            display: flex;
+            justify-content: space-between;
+
+            width: 100%;
+            padding: rem(0) rem(50);
+        }
+
+        &-list {
+            display: flex;
+            column-gap: rem(24);
+        }
+    }
 }

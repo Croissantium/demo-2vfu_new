@@ -347,16 +347,6 @@ svg * {
 a {
   color: inherit;
 }
-@media (any-hover: hover) {
-  a:hover {
-    color: var(--color-accent);
-  }
-}
-@media (any-hover: none) {
-  a:active {
-    color: var(--color-accent);
-  }
-}
 a[class] {
   text-decoration: none;
 }
@@ -365,6 +355,31 @@ a[class] {
   padding-block: 1.25rem;
   text-align: center;
   border-bottom: var(--border);
+}
+.header__body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 1.125rem 0rem;
+}
+.header__body-inner {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  padding: 0rem 3.125rem;
+}
+.header__body-list {
+  display: flex;
+  column-gap: 1.5rem;
+}
+
+.button {
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  border-radius: 6.25rem;
+  padding: 0.75rem 1.5rem;
+  background-color: var(--color-accent);
 }
 
 /*# sourceMappingURL=main.css.map */
