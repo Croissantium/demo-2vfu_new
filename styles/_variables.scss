@@ -24,6 +24,8 @@
 
     --transition-duration: 0.2s;
 
+    --border: #{rem(1)} solid var(--color-dark-15);
+
     @include laptop {
         --container-width: #{rem(1280)};
     }
