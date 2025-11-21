@@ -1,0 +1,52 @@
+@use '../helpers/' as *;
+
+.content {
+    &__home {
+        display: flex;
+        flex-direction: column;
+
+        width: rem(1260);
+        gap: rem(100);
+
+        &-blocks {
+            display: flex;
+            flex-direction: column;
+            gap: rem(24);
+
+            width: 100%;
+        }
+
+        &-title {
+            @include fluid-text(40, 32);
+
+            font-weight: 600;
+            text-align: left;
+        }
+        
+        &-grid {
+            width: 100%;
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: rem(24);
+        }
+
+        &-column {
+            width: 100%;
+            height: rem(240);
+            background-color: var(--color-gray-60);
+            border-radius: rem(28);
+        }
+
+        &-image {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+
+            &-img {
+                width: 100%;
+                height: 100%;
+                border-radius: rem(28);
+            }
+        }
+    }
+}
