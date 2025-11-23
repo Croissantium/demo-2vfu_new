@@ -26,7 +26,7 @@
     --border: #{rem(1)} solid var(--color-dark-15);
 
     --glass-bg: rgba(255, 255, 255, 0.1);
-    --glass-blur: 5px;
+    --glass-blur: 60px;
 
     @include laptop {
         --container-width: #{rem(1280)};

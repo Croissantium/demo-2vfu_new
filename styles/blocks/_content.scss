@@ -1,14 +1,17 @@
 @use '../helpers/' as *;
 
-.content {
-    &__home {
-        display: flex;
-        flex-direction: column;
+.home {
+    display: flex;
+    flex-direction: column;
+        
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
 
-        width: rem(1260);
-        gap: rem(100);
+    width: rem(1260);
+    gap: rem(100);
 
-        &-blocks {
+        &__blocks {
             display: flex;
             flex-direction: column;
             gap: rem(24);
@@ -16,37 +19,48 @@
             width: 100%;
         }
 
-        &-title {
-            @include fluid-text(40, 32);
+        &__title {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
 
-            font-weight: 600;
-            text-align: left;
+            &-text {
+                @include fluid-text(40, 32);
+
+                font-weight: 600;
+                text-align: left;
+            }
+
+            &-buttons {
+                display: flex;
+                align-items: right;
+                flex-wrap: wrap;
+                gap: rem(16);
+            }
+
         }
         
-        &-grid {
+        &__grid {
             width: 100%;
             display: grid;
             grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
             gap: rem(24);
         }
 
-        &-column {
+        &__item {
             width: 100%;
             height: rem(240);
             background-color: var(--color-gray-60);
-            border-radius: rem(28);
-        }
+            border-radius: rem(20);
 
-        &-image {
-            width: 100%;
-            height: 100%;
-            object-fit: cover;
+            &-link {
+                &:hover {
+                    transform: scale(1.02);
+                }
+            }
 
-            &-img {
-                width: 100%;
-                height: 100%;
-                border-radius: rem(28);
+            &-banner {
+                height: rem(400);
             }
         }
-    }
 }

@@ -253,7 +253,7 @@ svg * {
   --transition-duration: 0.2s;
   --border: 0.0625rem solid var(--color-dark-15);
   --glass-bg: rgba(255, 255, 255, 0.1);
-  --glass-blur: 5px;
+  --glass-blur: 60px;
 }
 @media (width <= 90.06125rem) {
   :root {
@@ -302,12 +302,6 @@ body {
   letter-spacing: -0.03em;
   color: var(--color-dark);
   background-color: var(--color-light);
-}
-
-.centered-container {
-  align-items: center;
-  justify-content: center;
-  margin: 0 auto;
 }
 
 h1, .h1,
@@ -401,44 +395,54 @@ a[class] {
   font-size: 1rem;
 }
 
-.content__home {
+.home {
   display: flex;
   flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto;
   width: 78.75rem;
   gap: 6.25rem;
 }
-.content__home-blocks {
+.home__blocks {
   display: flex;
   flex-direction: column;
   gap: 1.5rem;
   width: 100%;
 }
-.content__home-title {
+.home__title {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.home__title-text {
   font-size: clamp(2rem, 1.8846153846rem + 0.5128205128vw, 2.5rem);
   font-weight: 600;
   text-align: left;
 }
-.content__home-grid {
+.home__title-buttons {
+  display: flex;
+  align-items: right;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+.home__grid {
   width: 100%;
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
   gap: 1.5rem;
 }
-.content__home-column {
+.home__item {
   width: 100%;
   height: 15rem;
   background-color: var(--color-gray-60);
-  border-radius: 1.75rem;
+  border-radius: 1.25rem;
 }
-.content__home-image {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
+.home__item-link:hover {
+  transform: scale(1.02);
 }
-.content__home-image-img {
-  width: 100%;
-  height: 100%;
-  border-radius: 1.75rem;
+.home__item-banner {
+  height: 25rem;
 }
 
 .button {
@@ -446,8 +450,13 @@ a[class] {
   justify-content: center;
   align-items: center;
   border-radius: 6.25rem;
-  padding: 0.5rem 1rem;
+  padding: 0.625rem 1.25rem;
+}
+.button__primary {
   background-color: var(--color-accent);
+}
+.button__secondary {
+  border: var(--color-accent) solid 2px;
 }
 
 /*# sourceMappingURL=main.css.map */
