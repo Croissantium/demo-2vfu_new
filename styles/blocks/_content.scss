@@ -23,18 +23,21 @@
             display: flex;
             align-items: center;
             justify-content: space-between;
+            column-gap: rem(24);
 
             &-text {
                 @include fluid-text(40, 32);
 
+                width: 50%;
                 font-weight: 600;
                 text-align: left;
             }
 
             &-buttons {
                 display: flex;
-                align-items: right;
+                justify-content: right;
                 flex-wrap: wrap;
+                width: 50%;
                 gap: rem(16);
             }
 
@@ -60,6 +63,7 @@
             }
 
             &-banner {
+                margin-top: rem(50);
                 height: rem(400);
             }
         }

@@ -414,16 +414,19 @@ a[class] {
   display: flex;
   align-items: center;
   justify-content: space-between;
+  column-gap: 1.5rem;
 }
 .home__title-text {
   font-size: clamp(2rem, 1.8846153846rem + 0.5128205128vw, 2.5rem);
+  width: 50%;
   font-weight: 600;
   text-align: left;
 }
 .home__title-buttons {
   display: flex;
-  align-items: right;
+  justify-content: right;
   flex-wrap: wrap;
+  width: 50%;
   gap: 1rem;
 }
 .home__grid {
@@ -442,6 +445,7 @@ a[class] {
   transform: scale(1.02);
 }
 .home__item-banner {
+  margin-top: 3.125rem;
   height: 25rem;
 }
 
