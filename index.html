@@ -26,11 +26,19 @@
                     <a href="#" class="header__body-list-text">Сотруднику</a>
                     <a href="#" class="header__body-list-text">Институты и факультеты</a>
                 </nav>
-                <a href="#" class="button button__primary">войти</a>
+                <md-filled-button href="#">Войти</md-filled-button>
             </div>
         </div>
     </header>
     <section class="home">
+        <md-dialog id="dialog" aria-label="Диалоговое окно">
+            <div slot="headline">Внимание</div>
+            <form slot="content" id="form-id" method="dialog">Проверка</form>
+            <div slot="actions">
+                <md-text-button form="form-id" value="cancel">Отмена</md-text-button>
+                <md-filled-button form="form-id" value="ok">Ок</md-filled-button>
+            </div>
+        </md-dialog>
         <div class="home__blocks">
             <div class="home__grid">
                 <div class="home__item home__item-banner"></div>
@@ -40,8 +48,7 @@
             <div class="home__title">
                 <p class="home__title-text">Проверка</p>
                 <div class="home__title-buttons">
-                    <md-outlined-button href="#">Нажми меня</md-outlined-button>
-                    <md-filled-button href="#">Нажми меня</md-filled-button>
+                    <md-filled-button id="openBtn">Открыть диалоговое окно</md-filled-button>
                 </div>
             </div>
             <div class="home__grid">
@@ -54,7 +61,7 @@
             <div class="home__title">
                 <p class="home__title-text">Проверка</p>
                 <div class="home__title-buttons">
-                    <a href="" class="button button__secondary">Перейти</a>
+                    <md-filled-button href="#">Перейти</md-filled-button>
                 </div>
             </div>
             <div class="home__grid">
@@ -67,7 +74,7 @@
             <div class="home__title">
                 <p class="home__title-text">Проверка</p>
                 <div class="home__title-buttons">
-                    <a href="" class="button button__secondary">Перейти</a>
+                    <md-filled-button href="#">Перейти</md-filled-button>
                 </div>
             </div>
             <div class="home__grid">
