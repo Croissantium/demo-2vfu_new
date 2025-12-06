@@ -1,1 +1,1 @@
-console.log('Hello, World!');
+import 'https://esm.run/@material/web/all.js';

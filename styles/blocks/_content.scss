@@ -1,5 +1,28 @@
 @use '../helpers/' as *;
 
+md-filled-button {
+    --md-filled-button-container-color: #007aff;
+    --md-filled-button-label-text-color: white; /* цвет текста */
+}
+
+md-outlined-button {
+    --md-outlined-button-outline-color: #8e8e93; /* цвет рамки */
+    --md-outlined-button-label-text-color: #007aff; /* цвет текста */
+    --md-outlined-button-hover-outline-color: #007aff; /* цвет рамки при наведении */
+}
+
+md-outlined-text-field {
+    --md-outlined-text-field-outline-color: #8e8e93;
+    --md-outlined-text-field-hover-outline-color: #007aff;
+    --md-outlined-text-field-label-text-color: #6e6e73;
+    --md-outlined-text-field-focus-outline-color: #007aff;
+    --md-outlined-text-field-container-shape: 12px;
+}
+md-switch {
+    --md-switch-selected-handle-color: #007aff;
+    --md-switch-selected-track-color: #cce4ff;
+}
+
 .home {
     display: flex;
     flex-direction: column;

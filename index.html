@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html lang="ru">
-<meta>
+<head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Сайт университета Северо-Восточного федерального университета имени М.К. Аммосова">
@@ -10,7 +10,8 @@
     >
     <title>СВФУ | Главная</title>
     <link rel="stylesheet" href="styles/main.css">
-    <script src="scripts/main.js" type="module" defer></script>
+    <script src="/scripts/main.js" type="module" defer></script>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap">
 </head>
 <body>
     <header class="header">
@@ -32,14 +33,15 @@
     <section class="home">
         <div class="home__blocks">
             <div class="home__grid">
-                <a href="#" class="home__item home__item-banner"></a>
+                <div class="home__item home__item-banner"></div>
             </div>
         </div>
         <div class="home__blocks">
             <div class="home__title">
                 <p class="home__title-text">Проверка</p>
                 <div class="home__title-buttons">
-                    <a href="" class="button button__secondary">Перейти</a>
+                    <md-outlined-button href="#">Нажми меня</md-outlined-button>
+                    <md-filled-button href="#">Нажми меня</md-filled-button>
                 </div>
             </div>
             <div class="home__grid">

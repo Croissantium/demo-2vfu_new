@@ -19,5 +19,11 @@
   "homepage": "https://github.com/Croissantium/demo-2vfu_new#readme",
   "devDependencies": {
     "sass": "^1.93.2"
+  },
+  "dependencies": {
+    "@glidejs/glide": "^3.7.1",
+    "@material/web": "^2.4.1",
+    "@rollup/plugin-node-resolve": "^16.0.3",
+    "rollup": "^4.53.3"
   }
 }

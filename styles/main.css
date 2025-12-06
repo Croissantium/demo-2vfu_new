@@ -248,6 +248,8 @@ svg * {
   --color-accent: #ffd11a;
   --color-red: #ff5500;
   --font-famaly-base: "Inter-Tight", sans-serif;
+  --md-ref-typeface-brand: "Inter-Tight", sans-serif;
+  --md-ref-typeface-plain: "Inter-Tight", sans-serif;
   --container-width: 100rem;
   --container-padding-x: 1rem;
   --transition-duration: 0.2s;
@@ -393,6 +395,30 @@ a[class] {
   text-align: center;
   white-space: nowrap;
   font-size: 1rem;
+}
+
+md-filled-button {
+  --md-filled-button-container-color: #007aff;
+  --md-filled-button-label-text-color: white; /* цвет текста */
+}
+
+md-outlined-button {
+  --md-outlined-button-outline-color: #8e8e93; /* цвет рамки */
+  --md-outlined-button-label-text-color: #007aff; /* цвет текста */
+  --md-outlined-button-hover-outline-color: #007aff; /* цвет рамки при наведении */
+}
+
+md-outlined-text-field {
+  --md-outlined-text-field-outline-color: #8e8e93;
+  --md-outlined-text-field-hover-outline-color: #007aff;
+  --md-outlined-text-field-label-text-color: #6e6e73;
+  --md-outlined-text-field-focus-outline-color: #007aff;
+  --md-outlined-text-field-container-shape: 12px;
+}
+
+md-switch {
+  --md-switch-selected-handle-color: #007aff;
+  --md-switch-selected-track-color: #cce4ff;
 }
 
 .home {
