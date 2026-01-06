@@ -1,16 +1,20 @@
 @use 'helpers' as *;
 
-body {
+.body {
     @include fluid-text(18, 14);
     display: flex;
     height: 100vh;
     flex-direction: column;
 
-    font-family: var(--font-famaly-base);
+    font-family: var(--font-family-base);
     font-weight: 500;
     letter-spacing: -0.03em;
-    color: var(--md-sys-color-on-surface);
+    color: var(--color-black);
     background-color: var(--md-sys-color-background);
+
+    &__login{
+        background-color: red;
+    }
 }
 
 h1, .h1,
@@ -19,7 +23,7 @@ h3, .h3,
 h4, .h4,
 h5, .h5,
 h6, .h6 {
-    color: var(--color-dark);
+    color: var(--color-black);
 }
 
 h1, .h1 {

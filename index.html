@@ -10,10 +10,28 @@
     >
     <title>СВФУ | Главная</title>
     <link rel="stylesheet" href="styles/main.css">
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet" />
     <script src="scripts/main.js" type="module" defer></script>
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap">
+    <script>
+        (function() {
+        const html = document.documentElement;
+
+        function applyTheme(theme) {
+            html.classList.toggle("dark", theme === "dark");
+        }
+
+        const saved = localStorage.getItem("theme");
+
+        if (saved === "light" || saved === "dark") {
+            applyTheme(saved);
+        } else {
+            const prefersDark = window.matchMedia("(prefers-color-scheme: dark)").matches;
+            applyTheme(prefersDark ? "dark" : "light");
+        }
+        })();
+    </script>
 </head>
-<body>
+<body class="body">
     <header class="header">
         <div class="header__body">
             <div class="header__body-inner">
@@ -26,7 +44,7 @@
                     <a href="#" class="header__body-list-text">Сотруднику</a>
                     <a href="#" class="header__body-list-text">Институты и факультеты</a>
                 </nav>
-                <md-filled-button href="#">Войти</md-filled-button>
+                <md-filled-button href="login.html">Войти</md-filled-button>
             </div>
         </div>
     </header>
@@ -35,7 +53,7 @@
             <div slot="headline">Внимание</div>
             <form slot="content" id="form-id" method="dialog">Проверка</form>
             <div slot="actions">
-                <md-text-button form="form-id" value="cancel">Отмена</md-text-button>
+                <md-outlined-button form="form-id" value="cancel">Отмена</md-outlined-button>
                 <md-filled-button form="form-id" value="ok">Ок</md-filled-button>
             </div>
         </md-dialog>
@@ -86,7 +104,19 @@
     </section>
     <footer class="footer">
         <div class="footer__inner">
-
+            <div class="footer__inner-bottom">
+                <md-filled-select>
+                    <md-select-option id="themeLight" value="light">
+                        <div slot="headline">Светлая тема</div>
+                    </md-select-option>
+                    <md-select-option id="themeDark" value="dark">
+                        <div slot="headline">Темная тема</div>
+                    </md-select-option>
+                    <md-select-option selected id="themeAuto" value="auto">
+                        <div slot="headline">Авто</div>
+                    </md-select-option>
+                </md-filled-select>
+            </div>
         </div>
     </footer>
 </body>
